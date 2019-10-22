@@ -5,3 +5,11 @@
 **2. Run container on the image in interactive mode**
 
     docker run --name test -it centos_test
+    
+**3. Start existing docker
+   
+    docker test start
+    
+**4. Get to bash of running container
+       
+    docker  exec -it test bash
