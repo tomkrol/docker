@@ -6,10 +6,15 @@
 
     docker run --name test -it centos_test
     
-**3. Start existing docker
+**3. Start existing docker**
    
     docker test start
     
-**4. Get to bash of running container
+**4. Get to bash of running container**
        
     docker  exec -it test bash
+    
+**5. Pushing docker image to Hub**
+
+    docker tag drill:v2 docker.com/drill:v2
+    docker push docker.com/drill:v2
